@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faith Khosa Speaks | Speaker · Educator · Preparation Coach</title>
+<meta name="description" content="Faith Khosa is a South African Speaker, Educator, and Preparation Coach. Equipping students, young adults, and purpose-driven women to prepare their minds before the opportunity arrives.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0E1E35;
+    --navy-mid: #162844;
+    --navy-light: #1E3A5F;
+    --gold: #C9A84C;
+    --gold-light: #E8C96A;
+    --gold-pale: #F5E6B8;
+    --cream: #FAF7F0;
+    --white: #FFFFFF;
+    --text-dark: #0E1E35;
+    --text-mid: #4A5568;
+    --text-light: #8A9BB0;
+  }
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Jost', sans-serif;
+    background: var(--cream);
+    color: var(--text-dark);
+    overflow-x: hidden;
+  }
+
+  /* ── NOISE TEXTURE OVERLAY ── */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.4;
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 1.2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(14, 30, 53, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(201, 168, 76, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .nav-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-logo span { color: var(--gold); }
+
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+  }
+
+  .nav-links a:hover { color: var(--gold); }
+
+  .nav-cta {
+    background: var(--gold) !important;
+    color: var(--navy) !important;
+    padding: 0.6rem 1.5rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.1em !important;
+    transition: all 0.3s ease !important;
+  }
+
+  .nav-cta:hover {
+    background: var(--gold-light) !important;
+    transform: translateY(-1px);
+  }
+
+  /* ── HAMBURGER ── */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    transition: all 0.3s;
+  }
+
+  /* ── HERO ── */
+  #hero {
+    min-height: 100vh;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 8rem 4rem 4rem;
+  }
+
+  .hero-bg-pattern {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(ellipse 80% 60% at 70% 50%, rgba(201,168,76,0.06) 0%, transparent 70%),
+      radial-gradient(ellipse 50% 80% at 10% 80%, rgba(30,58,95,0.8) 0%, transparent 60%);
+  }
+
+  .hero-lines {
+    position: absolute;
+    top: 0; right: 0;
+    width: 55%;
+    height: 100%;
+    opacity: 0.06;
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--gold) 0px,
+      var(--gold) 1px,
+      transparent 1px,
+      transparent 60px
+    );
+  }
+
+  .hero-gold-bar {
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, transparent, var(--gold), transparent);
+  }
+
+  .hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+  }
+
+  .hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-eyebrow-line {
+    width: 40px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .hero-eyebrow-text {
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .hero-name {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3.5rem, 8vw, 7rem);
+    font-weight: 300;
+    color: var(--white);
+    line-height: 0.95;
+    margin-bottom: 0.5rem;
+    animation: fadeUp 0.8s 0.15s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-name em {
+    font-style: italic;
+    color: var(--gold);
+  }
+
+  .hero-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+    animation: fadeUp 0.8s 0.3s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-divider {
+    width: 60px;
+    height: 1px;
+    background: var(--gold);
+    margin-bottom: 2rem;
+    animation: fadeUp 0.8s 0.4s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-tagline {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-weight: 400;
+    font-style: italic;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    animation: fadeUp 0.8s 0.5s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-buttons {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.6s ease forwards;
+    opacity: 0;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn-primary:hover {
+    background: var(--gold-light);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 30px rgba(201,168,76,0.3);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+
+  .btn-secondary:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+  }
+
+  .hero-scroll {
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: rgba(255,255,255,0.4);
+    font-size: 0.7rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    animation: fadeUp 1s 1s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-scroll-line {
+    width: 40px;
+    height: 1px;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero-scroll-line::after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gold);
+    animation: scrollLine 2s infinite;
+  }
+
+  .hero-stat-strip {
+    position: absolute;
+    right: 4rem;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    z-index: 2;
+    animation: fadeLeft 1s 0.8s ease forwards;
+    opacity: 0;
+  }
+
+  .hero-stat {
+    text-align: center;
+    border-left: 1px solid rgba(201,168,76,0.3);
+    padding-left: 1.5rem;
+  }
+
+  .hero-stat-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gold);
+    line-height: 1;
+  }
+
+  .hero-stat-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    margin-top: 0.3rem;
+  }
+
+  /* ── SECTION BASE ── */
+  section { position: relative; z-index: 1; }
+
+  .section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-label-line {
+    width: 30px;
+    height: 1px;
+    background: var(--gold);
+  }
+
+  .section-label-text {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  .section-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--navy);
+  }
+
+  .section-heading-light {
+    color: var(--white);
+  }
+
+  /* ── ABOUT ── */
+  #about {
+    background: var(--cream);
+    padding: 8rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6rem;
+    align-items: center;
+  }
+
+  .about-image-wrap {
+    position: relative;
+  }
+
+  .about-image-placeholder {
+    width: 100%;
+    aspect-ratio: 3/4;
+    background: linear-gradient(135deg, var(--navy-light) 0%, var(--navy) 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255,255,255,0.3);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .about-image-placeholder .placeholder-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    opacity: 0.4;
+  }
+
+  .about-image-frame {
+    position: absolute;
+    top: 1.5rem;
+    left: 1.5rem;
+    right: -1.5rem;
+    bottom: -1.5rem;
+    border: 1px solid var(--gold);
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  .about-gold-badge {
+    position: absolute;
+    bottom: 2rem;
+    right: -2rem;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1.5rem;
+    text-align: center;
+    width: 130px;
+  }
+
+  .about-badge-text {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1.3;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    line-height: 1.9;
+    color: var(--text-mid);
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .about-content p strong {
+    color: var(--navy);
+    font-weight: 500;
+  }
+
+  .about-verse {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 3px solid var(--gold);
+    background: rgba(201,168,76,0.05);
+  }
+
+  .about-verse p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.15rem;
+    font-style: italic;
+    color: var(--navy);
+    margin-bottom: 0.3rem !important;
+  }
+
+  .about-verse cite {
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold);
+  }
+
+  /* ── TOPICS ── */
+  #topics {
+    background: var(--navy);
+    padding: 8rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #topics::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(201,168,76,0.05) 0%, transparent 70%);
+  }
+
+  .topics-header {
+    margin-bottom: 4rem;
+    max-width: 600px;
+  }
+
+  .topics-header p {
+    color: rgba(255,255,255,0.5);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-top: 1.5rem;
+    font-weight: 300;
+  }
+
+  .topics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5px;
+    background: rgba(201,168,76,0.1);
+  }
+
+  .topic-card {
+    background: var(--navy-mid);
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    cursor: default;
+  }
+
+  .topic-card::before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+  }
+
+  .topic-card:hover { background: var(--navy-light); }
+  .topic-card:hover::before { transform: scaleX(1); }
+
+  .topic-number {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 300;
+    color: rgba(201,168,76,0.15);
+    line-height: 1;
+    margin-bottom: 1rem;
+    transition: color 0.4s;
+  }
+
+  .topic-card:hover .topic-number { color: rgba(201,168,76,0.3); }
+
+  .topic-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0.8rem;
+    line-height: 1.3;
+  }
+
+  .topic-desc {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .topic-tag {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: 0.65rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid rgba(201,168,76,0.3);
+    padding: 0.3rem 0.8rem;
+  }
+
+  /* ── WHO I SERVE ── */
+  #serve {
+    background: var(--cream);
+    padding: 8rem 4rem;
+  }
+
+  .serve-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+
+  .serve-card {
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(14,30,53,0.08);
+    text-align: center;
+    transition: all 0.3s ease;
+    background: var(--white);
+  }
+
+  .serve-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(14,30,53,0.08);
+  }
+
+  .serve-icon {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    display: block;
+  }
+
+  .serve-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.8rem;
+  }
+
+  .serve-desc {
+    font-size: 0.83rem;
+    color: var(--text-mid);
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  /* ── SHOP / PDF ── */
+  #shop {
+    background: var(--navy);
+    padding: 8rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shop-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .shop-header p {
+    color: rgba(255,255,255,0.5);
+    max-width: 500px;
+    margin: 1.5rem auto 0;
+    line-height: 1.7;
+    font-weight: 300;
+  }
+
+  .shop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .product-card {
+    background: var(--navy-mid);
+    border: 1px solid rgba(201,168,76,0.1);
+    overflow: hidden;
+    transition: all 0.4s ease;
+  }
+
+  .product-card:hover {
+    border-color: rgba(201,168,76,0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+  }
+
+  .product-cover {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .product-cover-1 { background: linear-gradient(135deg, #1a3a5c, #0e1e35); }
+  .product-cover-2 { background: linear-gradient(135deg, #2d4a1e, #1a2c11); }
+  .product-cover-3 { background: linear-gradient(135deg, #3a1e4a, #1e0f2c); }
+
+  .product-cover-text {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .product-cover-icon {
+    font-size: 2.5rem;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  .product-cover-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    line-height: 1.3;
+  }
+
+  .product-cover-sub {
+    font-size: 0.7rem;
+    color: var(--gold);
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+  }
+
+  .product-cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      45deg, transparent, transparent 30px,
+      rgba(201,168,76,0.03) 30px, rgba(201,168,76,0.03) 31px
+    );
+  }
+
+  .product-info {
+    padding: 1.8rem;
+  }
+
+  .product-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 0.6rem;
+  }
+
+  .product-desc {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+  }
+
+  .product-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .product-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--gold);
+  }
+
+  .product-price span {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.3);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    margin-left: 0.3rem;
+  }
+
+  .product-badge {
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--navy);
+    background: var(--gold);
+    padding: 0.3rem 0.8rem;
+    font-weight: 600;
+  }
+
+  .btn-buy {
+    display: block;
+    width: 100%;
+    margin-top: 1.2rem;
+    background: transparent;
+    border: 1px solid rgba(201,168,76,0.4);
+    color: var(--gold);
+    padding: 0.85rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .btn-buy:hover {
+    background: var(--gold);
+    color: var(--navy);
+    border-color: var(--gold);
+  }
+
+  /* ── PAYMENT MODAL ── */
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(14,30,53,0.95);
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+
+  .modal-overlay.active { display: flex; }
+
+  .modal {
+    background: var(--navy-mid);
+    border: 1px solid rgba(201,168,76,0.2);
+    padding: 3rem;
+    max-width: 520px;
+    width: 100%;
+    position: relative;
+    animation: modalIn 0.3s ease;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 1.2rem; right: 1.5rem;
+    background: none;
+    border: none;
+    color: rgba(255,255,255,0.4);
+    font-size: 1.5rem;
+    cursor: pointer;
+    line-height: 1;
+    transition: color 0.3s;
+  }
+
+  .modal-close:hover { color: var(--gold); }
+
+  .modal-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+  }
+
+  .modal-price {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    color: var(--gold);
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(201,168,76,0.15);
+  }
+
+  .modal-field {
+    margin-bottom: 1.2rem;
+  }
+
+  .modal-field label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.4rem;
+  }
+
+  .modal-field input {
+    width: 100%;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.1);
+    padding: 0.85rem 1rem;
+    color: var(--white);
+    font-family: 'Jost', sans-serif;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+
+  .modal-field input:focus { border-color: var(--gold); }
+  .modal-field input::placeholder { color: rgba(255,255,255,0.2); }
+
+  .modal-payment-info {
+    background: rgba(201,168,76,0.05);
+    border: 1px solid rgba(201,168,76,0.15);
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .modal-payment-info p {
+    font-size: 0.82rem;
+    color: rgba(255,255,255,0.6);
+    line-height: 1.6;
+  }
+
+  .modal-payment-info strong {
+    color: var(--gold);
+    font-weight: 500;
+  }
+
+  .modal-submit {
+    width: 100%;
+    background: var(--gold);
+    color: var(--navy);
+    padding: 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .modal-submit:hover {
+    background: var(--gold-light);
+    transform: translateY(-1px);
+  }
+
+  .modal-secure {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── BOOKING ── */
+  #booking {
+    background: var(--cream);
+    padding: 8rem 4rem;
+  }
+
+  .booking-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 6rem;
+    align-items: start;
+  }
+
+  .booking-left h2 { margin-bottom: 1.5rem; }
+
+  .booking-left p {
+    font-size: 0.95rem;
+    color: var(--text-mid);
+    line-height: 1.8;
+    margin-bottom: 2rem;
+    font-weight: 300;
+  }
+
+  .booking-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .booking-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    font-weight: 300;
+  }
+
+  .booking-features li::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: var(--gold);
+    margin-top: 0.6em;
+    flex-shrink: 0;
+  }
+
+  .booking-form-wrap {
+    background: var(--white);
+    border: 1px solid rgba(14,30,53,0.06);
+    padding: 3rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.2rem;
+  }
+
+  .form-group label {
+    display: block;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    border: 1px solid rgba(14,30,53,0.1);
+    background: var(--cream);
+    padding: 0.85rem 1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.88rem;
+    color: var(--text-dark);
+    outline: none;
+    transition: border-color 0.3s;
+    appearance: none;
+  }
+
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--gold);
+  }
+
+  .form-group textarea { resize: vertical; min-height: 100px; }
+
+  .form-submit {
+    width: 100%;
+    background: var(--navy);
+    color: var(--white);
+    padding: 1.1rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 0.8rem;
+  }
+
+  .form-submit:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 30px rgba(14,30,53,0.15);
+  }
+
+  .form-note {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.72rem;
+    color: var(--text-light);
+    letter-spacing: 0.05em;
+  }
+
+  /* ── TESTIMONIALS ── */
+  #testimonials {
+    background: var(--navy);
+    padding: 8rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #testimonials::after {
+    content: '\201C';
+    position: absolute;
+    right: 4rem;
+    top: 4rem;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20rem;
+    line-height: 1;
+    color: rgba(201,168,76,0.04);
+    pointer-events: none;
+  }
+
+  .testimonials-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .testimonial-card {
+    background: var(--navy-mid);
+    padding: 2.5rem;
+    border: 1px solid rgba(201,168,76,0.08);
+    position: relative;
+    transition: all 0.3s;
+  }
+
+  .testimonial-card:hover {
+    border-color: rgba(201,168,76,0.25);
+  }
+
+  .testimonial-quote {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.75);
+    line-height: 1.7;
+    margin-bottom: 1.5rem;
+  }
+
+  .testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .testimonial-avatar {
+    width: 42px;
+    height: 42px;
+    background: rgba(201,168,76,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+
+  .testimonial-name {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .testimonial-role {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.4);
+    margin-top: 0.2rem;
+    font-weight: 300;
+  }
+
+  .testimonial-placeholder {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1rem;
+    font-style: italic;
+    color: rgba(255,255,255,0.2);
+    text-align: center;
+    padding: 3rem;
+    border: 1px dashed rgba(201,168,76,0.15);
+    grid-column: 1 / -1;
+  }
+
+  /* ── CTA BAND ── */
+  #cta {
+    background: var(--gold);
+    padding: 6rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  #cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      -45deg, transparent, transparent 40px,
+      rgba(14,30,53,0.04) 40px, rgba(14,30,53,0.04) 41px
+    );
+  }
+
+  .cta-content { position: relative; z-index: 1; }
+
+  .cta-eyebrow {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: rgba(14,30,53,0.6);
+    margin-bottom: 1rem;
+  }
+
+  .cta-heading {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    font-weight: 400;
+    color: var(--navy);
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+
+  .cta-heading em { font-style: italic; }
+
+  .cta-sub {
+    font-size: 1rem;
+    color: rgba(14,30,53,0.65);
+    margin-bottom: 2.5rem;
+    font-weight: 300;
+  }
+
+  .btn-cta-dark {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--white);
+    padding: 1.1rem 3rem;
+    font-family: 'Jost', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-cta-dark:hover {
+    background: var(--navy-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px rgba(14,30,53,0.3);
+  }
+
+  /* ── CONNECT ── */
+  #connect {
+    background: var(--cream);
+    padding: 6rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+  }
+
+  .connect-left h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .connect-left p {
+    font-size: 0.88rem;
+    color: var(--text-mid);
+    font-weight: 300;
+  }
+
+  .connect-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .connect-link {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid rgba(14,30,53,0.12);
+    text-decoration: none;
+    color: var(--navy);
+    font-size: 0.78rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    background: var(--white);
+  }
+
+  .connect-link:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(14,30,53,0.06);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: var(--navy);
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(201,168,76,0.1);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-logo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .footer-logo span { color: var(--gold); }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.3);
+    letter-spacing: 0.05em;
+    text-align: center;
+  }
+
+  .footer-email a {
+    font-size: 0.78rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    transition: opacity 0.3s;
+  }
+
+  .footer-email a:hover { opacity: 0.7; }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fadeLeft {
+    from { opacity: 0; transform: translateX(30px); }
+    to { opacity: 1; transform: translateX(0); }
+  }
+
+  @keyframes scrollLine {
+    0% { left: -100%; }
+    100% { left: 100%; }
+  }
+
+  @keyframes modalIn {
+    from { opacity: 0; transform: scale(0.96); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+  }
+
+  .reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  /* ── SUCCESS MESSAGE ── */
+  .success-msg {
+    display: none;
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .success-msg.active { display: block; }
+
+  .success-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+
+  .success-msg h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: var(--gold);
+    margin-bottom: 0.5rem;
+  }
+
+  .success-msg p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.6;
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 1024px) {
+    nav { padding: 1rem 2rem; }
+    .nav-links { display: none; }
+    .nav-links.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0; right: 0;
+      background: var(--navy);
+      padding: 2rem;
+      gap: 1.5rem;
+      border-top: 1px solid rgba(201,168,76,0.1);
+    }
+    .hamburger { display: flex; }
+    #hero { padding: 7rem 2rem 4rem; }
+    .hero-stat-strip { display: none; }
+    #about { grid-template-columns: 1fr; padding: 5rem 2rem; gap: 3rem; }
+    .about-gold-badge { display: none; }
+    #topics { padding: 5rem 2rem; }
+    .topics-grid { grid-template-columns: 1fr 1fr; }
+    #serve { padding: 5rem 2rem; }
+    .serve-grid { grid-template-columns: 1fr 1fr; }
+    #shop { padding: 5rem 2rem; }
+    .shop-grid { grid-template-columns: 1fr 1fr; }
+    #booking { padding: 5rem 2rem; }
+    .booking-wrap { grid-template-columns: 1fr; gap: 3rem; }
+    .form-row { grid-template-columns: 1fr; }
+    #testimonials { padding: 5rem 2rem; }
+    .testimonials-grid { grid-template-columns: 1fr; }
+    #cta { padding: 5rem 2rem; }
+    #connect { padding: 4rem 2rem; }
+    footer { padding: 2rem; }
+  }
+
+  @media (max-width: 640px) {
+    .topics-grid { grid-template-columns: 1fr; }
+    .serve-grid { grid-template-columns: 1fr; }
+    .shop-grid { grid-template-columns: 1fr; }
+    .booking-form-wrap { padding: 1.5rem; }
+    #about { padding: 4rem 1.5rem; }
+    #topics { padding: 4rem 1.5rem; }
+    #serve { padding: 4rem 1.5rem; }
+    #shop { padding: 4rem 1.5rem; }
+    #booking { padding: 4rem 1.5rem; }
+    #testimonials { padding: 4rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Faith <span>Khosa</span> Speaks</a>
+  <button class="hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#topics">Topics</a></li>
+    <li><a href="#shop">Resources</a></li>
+    <li><a href="#testimonials">Impact</a></li>
+    <li><a href="#booking" class="nav-cta">Book Faith</a></li>
+  </ul>
+</nav>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <div class="hero-bg-pattern"></div>
+  <div class="hero-lines"></div>
+  <div class="hero-gold-bar"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Speaker · Educator · Preparation Coach · South Africa</span>
+    </div>
+    <h1 class="hero-name">Faith<br><em>Khosa</em></h1>
+    <p class="hero-title">Speaks</p>
+    <div class="hero-divider"></div>
+    <p class="hero-tagline">"Preparation is the bridge between where you are<br>and where God is taking you."</p>
+    <div class="hero-buttons">
+      <a href="#booking" class="btn-primary">Book a Speaking Engagement</a>
+      <a href="#shop" class="btn-secondary">Browse Resources</a>
+    </div>
+  </div>
+
+  <div class="hero-stat-strip">
+    <div class="hero-stat">
+      <div class="hero-stat-number">3+</div>
+      <div class="hero-stat-label">Audiences</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">∞</div>
+      <div class="hero-stat-label">Purpose</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-number">1</div>
+      <div class="hero-stat-label">Message</div>
+    </div>
+  </div>
+
+  <div class="hero-scroll">
+    <div class="hero-scroll-line"></div>
+    <span>Scroll to explore</span>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-image-wrap reveal">
+    <div class="about-image-placeholder">
+      <span class="placeholder-icon">🖼</span>
+      <span>Your photo goes here</span>
+      <span style="font-size:0.75rem;opacity:0.5;">Upload your professional portrait</span>
+    </div>
+    <div class="about-image-frame"></div>
+    <div class="about-gold-badge">
+      <div class="about-badge-text">Born to Prepare Others</div>
+    </div>
+  </div>
+
+  <div class="about-content reveal">
+    <div class="section-label">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">About Faith</span>
+    </div>
+    <h2 class="section-heading">The oil was already<br>in the house.</h2>
+
+    <p style="margin-top:2rem">From childhood, <strong>Faith Khosa</strong> demonstrated a gift that could not be contained — she would take chalk from school just so she could teach her friends what she had learned that day. That impulse to learn deeply and pour it into others has never left her. It just needed a bigger room.</p>
+
+    <p>Today, Faith is a <strong>Speaker, Educator, and Preparation Coach</strong> based in South Africa. She believes that the greatest tragedy is not failing — it is arriving at the moment unprepared. Her mission is simple and profound: equip people to be ready <em>before</em> the opportunity arrives.</p>
+
+    <p>Faith speaks to students, young adults, aspiring entrepreneurs, and purpose-driven women — across schools, churches, conferences, and corporate spaces. She does not deliver generic motivation. She delivers <strong>targeted preparation</strong>: researching every audience she serves and arriving with a message that speaks directly to where they are.</p>
+
+    <div class="about-verse">
+      <p>"What do you have in your house?"</p>
+      <cite>— 2 Kings 4:2 · The question that changes everything</cite>
+    </div>
+  </div>
+</section>
+
+<!-- ── TOPICS ── -->
+<section id="topics">
+  <div class="topics-header reveal">
+    <div class="section-label">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">What Faith Speaks On</span>
+    </div>
+    <h2 class="section-heading section-heading-light">A message prepared<br>for every season.</h2>
+    <p>Faith does not arrive with a fixed script. She researches your audience, understands their specific needs, and delivers a session that serves them precisely. Every talk is a prepared, purposeful encounter.</p>
+  </div>
+
+  <div class="topics-grid">
+    <div class="topic-card reveal">
+      <div class="topic-number">01</div>
+      <div class="topic-title">Mindset & Wealth Preparation</div>
+      <div class="topic-desc">Equipping minds for wealth, success, and opportunity before it arrives — because an unprepared mind cannot sustain what it receives.</div>
+      <span class="topic-tag">All Audiences</span>
+    </div>
+    <div class="topic-card reveal">
+      <div class="topic-number">02</div>
+      <div class="topic-title">Student Preparation</div>
+      <div class="topic-desc">Study smarter, think clearer, and walk into every exam, varsity year, and opportunity with a prepared and confident mind.</div>
+      <span class="topic-tag">Schools & Universities</span>
+    </div>
+    <div class="topic-card reveal">
+      <div class="topic-number">03</div>
+      <div class="topic-title">Spiritual Preparation</div>
+      <div class="topic-desc">Positioning yourself spiritually for God's next move — understanding favour, divine timing, and walking in readiness.</div>
+      <span class="topic-tag">Faith Communities</span>
+    </div>
+    <div class="topic-card reveal">
+      <div class="topic-number">04</div>
+      <div class="topic-title">Identity & Purpose</div>
+      <div class="topic-desc">Knowing who you are before the world defines you — the foundation every purpose-driven person must lay before stepping into visibility.</div>
+      <span class="topic-tag">Young Adults & Women</span>
+    </div>
+    <div class="topic-card reveal">
+      <div class="topic-number">05</div>
+      <div class="topic-title">Entrepreneurship Preparation</div>
+      <div class="topic-desc">Building the mind, habits, and character before building the business — because most ventures fail from the inside, not the outside.</div>
+      <span class="topic-tag">Entrepreneurs</span>
+    </div>
+    <div class="topic-card reveal">
+      <div class="topic-number">06</div>
+      <div class="topic-title">Custom Topic</div>
+      <div class="topic-desc">Tell Faith what your audience needs. She will research it deeply, prepare thoroughly, and deliver a message built specifically for your people.</div>
+      <span class="topic-tag">Any Event</span>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHO I SERVE ── -->
+<section id="serve">
+  <div style="text-align:center;margin-bottom:1rem" class="reveal">
+    <div class="section-label" style="justify-content:center">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Who Faith Serves</span>
+    </div>
+    <h2 class="section-heading">Every room. Every season.<br>Every audience.</h2>
+  </div>
+
+  <div class="serve-grid">
+    <div class="serve-card reveal">
+      <span class="serve-icon">🎓</span>
+      <div class="serve-title">Schools & Universities</div>
+      <div class="serve-desc">Equipping students with the mindset, study strategies, and exam readiness to perform with confidence.</div>
+    </div>
+    <div class="serve-card reveal">
+      <span class="serve-icon">⛪</span>
+      <div class="serve-title">Churches & Faith Communities</div>
+      <div class="serve-desc">Scriptural, practical, and powerful sessions on preparation, identity, favour, and walking in purpose.</div>
+    </div>
+    <div class="serve-card reveal">
+      <span class="serve-icon">🏢</span>
+      <div class="serve-title">Corporates & Organisations</div>
+      <div class="serve-desc">Mindset, performance, and preparation workshops for teams ready to grow beyond their current ceiling.</div>
+    </div>
+    <div class="serve-card reveal">
+      <span class="serve-icon">🌟</span>
+      <div class="serve-title">Conferences & Events</div>
+      <div class="serve-desc">Keynote addresses and panel sessions for youth conferences, women's events, and leadership summits.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SHOP ── -->
+<section id="shop">
+  <div class="shop-header reveal">
+    <div class="section-label" style="justify-content:center">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Resources & Guides</span>
+    </div>
+    <h2 class="section-heading section-heading-light">Preparation tools<br>you can use today.</h2>
+    <p>Downloadable PDF guides packed with the research, frameworks, and declarations Faith teaches — so you can begin preparing your mind right now.</p>
+  </div>
+
+  <div class="shop-grid">
+    <div class="product-card reveal">
+      <div class="product-cover product-cover-1">
+        <div class="product-cover-text">
+          <span class="product-cover-icon">🔑</span>
+          <div class="product-cover-title">7 Ways to Prepare Your Mind Before the Opportunity Comes</div>
+          <div class="product-cover-sub">Preparation Guide</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-title">The Preparation Framework</div>
+        <div class="product-desc">Seven proven mental preparation strategies to position yourself for wealth, purpose, and opportunity — before it arrives.</div>
+        <div class="product-footer">
+          <div class="product-price">R75 <span>PDF</span></div>
+          <span class="product-badge">Instant Download</span>
+        </div>
+        <button class="btn-buy" onclick="openModal('The Preparation Framework', 'R75')">Get This Guide</button>
+      </div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-cover product-cover-2">
+        <div class="product-cover-text">
+          <span class="product-cover-icon">📚</span>
+          <div class="product-cover-title">The Student Preparation Guide</div>
+          <div class="product-cover-sub">Study & Exam Mastery</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-title">Study Smarter, Not Harder</div>
+        <div class="product-desc">A complete guide for South African students — how to study smarter, retain more, and walk into every exam with a prepared and confident mind.</div>
+        <div class="product-footer">
+          <div class="product-price">R85 <span>PDF</span></div>
+          <span class="product-badge">Instant Download</span>
+        </div>
+        <button class="btn-buy" onclick="openModal('Study Smarter, Not Harder', 'R85')">Get This Guide</button>
+      </div>
+    </div>
+
+    <div class="product-card reveal">
+      <div class="product-cover product-cover-3">
+        <div class="product-cover-text">
+          <span class="product-cover-icon">🙏</span>
+          <div class="product-cover-title">30 Daily Declarations for a Prepared Mind</div>
+          <div class="product-cover-sub">Spiritual Preparation</div>
+        </div>
+      </div>
+      <div class="product-info">
+        <div class="product-title">30 Declarations of Preparation</div>
+        <div class="product-desc">One powerful declaration per day for 30 days — rooted in scripture, designed to renew your mind and position you for what God has prepared.</div>
+        <div class="product-footer">
+          <div class="product-price">R65 <span>PDF</span></div>
+          <span class="product-badge">Instant Download</span>
+        </div>
+        <button class="btn-buy" onclick="openModal('30 Declarations of Preparation', 'R65')">Get This Guide</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PAYMENT MODAL ── -->
+<div class="modal-overlay" id="paymentModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal()">×</button>
+    <div id="modalForm">
+      <div class="modal-label">Secure Purchase</div>
+      <div class="modal-title" id="modalProductName">Product Name</div>
+      <div class="modal-price" id="modalProductPrice">R75</div>
+
+      <div class="modal-field">
+        <label>Full Name</label>
+        <input type="text" id="buyerName" placeholder="Your full name" required>
+      </div>
+      <div class="modal-field">
+        <label>Email Address — Guide will be sent here</label>
+        <input type="email" id="buyerEmail" placeholder="your@email.com" required>
+      </div>
+      <div class="modal-field">
+        <label>WhatsApp Number</label>
+        <input type="tel" id="buyerPhone" placeholder="+27 000 000 0000" required>
+      </div>
+
+      <div class="modal-payment-info">
+        <p>After submitting your details, you will receive payment instructions via email within a few minutes. Once payment is confirmed, your PDF guide will be delivered to your inbox. <strong>Payment via EFT, SnapScan, or Yoco.</strong></p>
+      </div>
+
+      <button class="modal-submit" onclick="submitPurchase()">Submit My Order</button>
+      <div class="modal-secure">🔒 Your information is safe and secure</div>
+    </div>
+
+    <div class="success-msg" id="modalSuccess">
+      <div class="success-icon">✨</div>
+      <h3>Order Received!</h3>
+      <p>Thank you! You will receive an email at <strong id="confirmedEmail"></strong> with payment instructions within the next few minutes. Once payment is confirmed your guide is on its way.</p>
+      <br>
+      <p style="color:rgba(255,255,255,0.3);font-size:0.75rem">Questions? Contact contactfaithkhosa@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- ── BOOKING ── -->
+<section id="booking">
+  <div class="booking-wrap">
+    <div class="booking-left reveal">
+      <div class="section-label">
+        <div class="section-label-line"></div>
+        <span class="section-label-text">Book Faith</span>
+      </div>
+      <h2 class="section-heading">Let us prepare<br>your people.</h2>
+      <p>Faith is available for schools, churches, corporate organisations, conferences, and community events across South Africa and beyond. Complete the inquiry form and you will receive a response within 48 hours.</p>
+      <ul class="booking-features">
+        <li>Research-based preparation for every audience</li>
+        <li>Available for keynotes, workshops, half-day and full-day programmes</li>
+        <li>In-person across South Africa and virtual engagements worldwide</li>
+        <li>Custom topics available — Faith prepares specifically for your people</li>
+        <li>Response guaranteed within 48 hours of inquiry</li>
+      </ul>
+    </div>
+
+    <div class="booking-form-wrap reveal">
+      <div id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>First Name *</label>
+            <input type="text" id="bFirstName" placeholder="First name" required>
+          </div>
+          <div class="form-group">
+            <label>Last Name *</label>
+            <input type="text" id="bLastName" placeholder="Last name" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email Address *</label>
+            <input type="email" id="bEmail" placeholder="your@email.com" required>
+          </div>
+          <div class="form-group">
+            <label>Phone / WhatsApp *</label>
+            <input type="tel" id="bPhone" placeholder="+27 000 000 0000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Organisation Name *</label>
+            <input type="text" id="bOrg" placeholder="School, church, company..." required>
+          </div>
+          <div class="form-group">
+            <label>Your Role *</label>
+            <input type="text" id="bRole" placeholder="Principal, Pastor, HR..." required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Type of Event *</label>
+          <select id="bEventType" required>
+            <option value="" disabled selected>Select event type...</option>
+            <option>School or Educational Institution</option>
+            <option>Church or Faith Community</option>
+            <option>Corporate or Business</option>
+            <option>Youth Conference</option>
+            <option>Women's Event</option>
+            <option>Community Event</option>
+            <option>Online or Virtual Event</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Type of Engagement *</label>
+            <select id="bEngagement" required>
+              <option value="" disabled selected>Select engagement type...</option>
+              <option>Keynote Address</option>
+              <option>Motivational Talk (30–60 min)</option>
+              <option>Workshop or Training</option>
+              <option>Panel or Q&A</option>
+              <option>Half Day Programme</option>
+              <option>Full Day Programme</option>
+              <option>Online Webinar</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>Estimated Attendees *</label>
+            <select id="bAttendees" required>
+              <option value="" disabled selected>Select range...</option>
+              <option>Under 50</option>
+              <option>50 to 100</option>
+              <option>100 to 300</option>
+              <option>300 to 500</option>
+              <option>500 to 1000</option>
+              <option>Over 1000</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Preferred Event Date *</label>
+            <input type="date" id="bDate" required>
+          </div>
+          <div class="form-group">
+            <label>Event Location / City *</label>
+            <input type="text" id="bLocation" placeholder="City, Province or Virtual" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Topic or What Your Audience Needs *</label>
+          <textarea id="bTopic" placeholder="Describe the theme of your event and what you would like Faith to speak on. The more detail you give, the better she can prepare for your specific audience..." required></textarea>
+        </div>
+        <div class="form-group">
+          <label>Budget Range</label>
+          <select id="bBudget">
+            <option value="" disabled selected>Select budget range...</option>
+            <option>Under R1,000</option>
+            <option>R1,000 to R3,000</option>
+            <option>R3,000 to R8,000</option>
+            <option>R8,000 to R15,000</option>
+            <option>Over R15,000</option>
+            <option>Open to discussion</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>How did you hear about Faith?</label>
+          <select id="bSource">
+            <option value="" disabled selected>Select one...</option>
+            <option>Instagram</option>
+            <option>TikTok</option>
+            <option>YouTube</option>
+            <option>LinkedIn</option>
+            <option>Facebook</option>
+            <option>Word of mouth / Referral</option>
+            <option>Google Search</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <button class="form-submit" onclick="submitBooking()">Submit Booking Inquiry</button>
+        <p class="form-note">🔒 Your information is confidential · Response within 48 hours</p>
+      </div>
+
+      <div class="success-msg" id="bookingSuccess" style="background:var(--white);padding:3rem;text-align:center">
+        <div style="font-size:3rem;margin-bottom:1rem">✨</div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.8rem;color:var(--navy);margin-bottom:0.5rem">Inquiry Received!</h3>
+        <p style="font-size:0.88rem;color:var(--text-mid);line-height:1.6">Thank you for your interest in booking Faith Khosa. Your inquiry has been received and Faith will respond within 48 hours to discuss your event details.</p>
+        <br>
+        <p style="font-size:0.75rem;color:var(--text-light)">Urgent? Email contactfaithkhosa@gmail.com directly.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="testimonials-header reveal">
+    <div class="section-label" style="justify-content:center">
+      <div class="section-label-line"></div>
+      <span class="section-label-text">Impact & Testimonials</span>
+    </div>
+    <h2 class="section-heading section-heading-light">Words from those<br>who have been prepared.</h2>
+  </div>
+
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"Faith has a rare gift — she does not just inspire you in the moment. She gives you a framework you carry with you long after the event. Our Grade 12 students walked out of that session with tools they actually used in their exams."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">NK</div>
+        <div>
+          <div class="testimonial-name">Nomsa K.</div>
+          <div class="testimonial-role">Head of Department, Johannesburg High School</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="testimonial-quote">"When Faith spoke at our women's conference, the room was completely still. She speaks with conviction, with research, and with love. Every woman left equipped — not just moved."</div>
+      <div class="testimonial-author">
+        <div class="testimonial-avatar">PM</div>
+        <div>
+          <div class="testimonial-name">Pastor Miriam</div>
+          <div class="testimonial-role">Women's Ministry Leader, Gauteng</div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-placeholder reveal">
+      ✨ Your testimonials will live here. Collect them after every talk — they become your greatest asset.
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA ── -->
+<section id="cta">
+  <div class="cta-content">
+    <div class="cta-eyebrow">The opportunity is coming</div>
+    <h2 class="cta-heading">Will your audience<br>be <em>ready for it?</em></h2>
+    <p class="cta-sub">Book Faith to prepare your people before the moment arrives.</p>
+    <a href="#booking" class="btn-cta-dark">Submit a Booking Inquiry</a>
+  </div>
+</section>
+
+<!-- ── CONNECT ── -->
+<section id="connect">
+  <div class="connect-left">
+    <h3>Follow the Journey</h3>
+    <p>Daily preparation content across all platforms.</p>
+  </div>
+  <div class="connect-links">
+    <a href="#" class="connect-link">📸 Instagram</a>
+    <a href="#" class="connect-link">🎵 TikTok</a>
+    <a href="#" class="connect-link">🎥 YouTube</a>
+    <a href="#" class="connect-link">💼 LinkedIn</a>
+    <a href="#" class="connect-link">📘 Facebook</a>
+    <a href="mailto:contactfaithkhosa@gmail.com" class="connect-link">✉️ Email</a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <a href="#hero" class="footer-logo">Faith <span>Khosa</span> Speaks</a>
+  <div class="footer-copy">© 2026 Faith Khosa Speaks · South Africa · All rights reserved</div>
+  <div class="footer-email"><a href="mailto:contactfaithkhosa@gmail.com">contactfaithkhosa@gmail.com</a></div>
+</footer>
+
+<script>
+  // ── HAMBURGER ──
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+
+  // Close nav on link click
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => navLinks.classList.remove('open'));
+  });
+
+  // ── REVEAL ON SCROLL ──
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+  reveals.forEach(el => observer.observe(el));
+
+  // ── SMOOTH NAV HIDE/SHOW ──
+  let lastScroll = 0;
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    const current = window.scrollY;
+    if (current > lastScroll && current > 200) {
+      nav.style.transform = 'translateY(-100%)';
+    } else {
+      nav.style.transform = 'translateY(0)';
+    }
+    lastScroll = current;
+  });
+
+  // ── PAYMENT MODAL ──
+  let currentProduct = '';
+  let currentPrice = '';
+
+  function openModal(product, price) {
+    currentProduct = product;
+    currentPrice = price;
+    document.getElementById('modalProductName').textContent = product;
+    document.getElementById('modalProductPrice').textContent = price;
+    document.getElementById('paymentModal').classList.add('active');
+    document.getElementById('modalForm').style.display = 'block';
+    document.getElementById('modalSuccess').classList.remove('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('paymentModal').classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  document.getElementById('paymentModal').addEventListener('click', function(e) {
+    if (e.target === this) closeModal();
+  });
+
+  function submitPurchase() {
+    const name = document.getElementById('buyerName').value.trim();
+    const email = document.getElementById('buyerEmail').value.trim();
+    const phone = document.getElementById('buyerPhone').value.trim();
+
+    if (!name || !email || !phone) {
+      alert('Please fill in all fields before submitting.');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    // Build mailto link to send order to Faith
+    const subject = encodeURIComponent(`New PDF Purchase: ${currentProduct}`);
+    const body = encodeURIComponent(
+      `New PDF Guide Order\n\n` +
+      `Product: ${currentProduct}\n` +
+      `Price: ${currentPrice}\n\n` +
+      `Customer Name: ${name}\n` +
+      `Customer Email: ${email}\n` +
+      `Customer WhatsApp: ${phone}\n\n` +
+      `Please send payment instructions to the customer and deliver the PDF once payment is confirmed.`
+    );
+
+    window.location.href = `mailto:contactfaithkhosa@gmail.com?subject=${subject}&body=${body}`;
+
+    document.getElementById('confirmedEmail').textContent = email;
+    document.getElementById('modalForm').style.display = 'none';
+    document.getElementById('modalSuccess').classList.add('active');
+  }
+
+  // ── BOOKING FORM ──
+  function submitBooking() {
+    const first = document.getElementById('bFirstName').value.trim();
+    const last = document.getElementById('bLastName').value.trim();
+    const email = document.getElementById('bEmail').value.trim();
+    const phone = document.getElementById('bPhone').value.trim();
+    const org = document.getElementById('bOrg').value.trim();
+    const role = document.getElementById('bRole').value.trim();
+    const eventType = document.getElementById('bEventType').value;
+    const engagement = document.getElementById('bEngagement').value;
+    const attendees = document.getElementById('bAttendees').value;
+    const date = document.getElementById('bDate').value;
+    const location = document.getElementById('bLocation').value.trim();
+    const topic = document.getElementById('bTopic').value.trim();
+
+    if (!first || !last || !email || !phone || !org || !role || !eventType || !engagement || !attendees || !date || !location || !topic) {
+      alert('Please fill in all required fields marked with *');
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      alert('Please enter a valid email address.');
+      return;
+    }
+
+    const budget = document.getElementById('bBudget').value || 'Not specified';
+    const source = document.getElementById('bSource').value || 'Not specified';
+
+    const subject = encodeURIComponent(`Speaking Booking Inquiry — ${org} — ${first} ${last}`);
+    const body = encodeURIComponent(
+      `SPEAKING BOOKING INQUIRY\n` +
+      `Submitted: ${new Date().toLocaleDateString('en-ZA')}\n\n` +
+      `CONTACT DETAILS\n` +
+      `Name: ${first} ${last}\n` +
+      `Email: ${email}\n` +
+      `Phone/WhatsApp: ${phone}\n\n` +
+      `EVENT DETAILS\n` +
+      `Organisation: ${org}\n` +
+      `Role: ${role}\n` +
+      `Event Type: ${eventType}\n` +
+      `Engagement Type: ${engagement}\n` +
+      `Estimated Attendees: ${attendees}\n` +
+      `Event Date: ${date}\n` +
+      `Location: ${location}\n\n` +
+      `TOPIC / AUDIENCE NEEDS\n${topic}\n\n` +
+      `Budget Range: ${budget}\n` +
+      `How they heard about Faith: ${source}`
+    );
+
+    window.location.href = `mailto:contactfaithkhosa@gmail.com?subject=${subject}&body=${body}`;
+
+    document.getElementById('bookingForm').style.display = 'none';
+    document.getElementById('bookingSuccess').classList.add('active');
+    document.getElementById('bookingSuccess').style.display = 'block';
+  }
+</script>
+</body>
+</html>
